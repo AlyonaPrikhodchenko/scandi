@@ -1,0 +1,27 @@
+.footer {
+  padding: 33px 0 40px;
+  background-color: $color-light-bg;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+}
+
+.footer__tel {
+  margin-right: 42px;
+  text-decoration: none;
+
+  @include font(400, 18px, 30px, $color-dark-text);
+}
+
+.footer__address {
+  @include font(400, 18px, 30px, $color-dark-text);
+}
+
+.footer__contact {
+  margin: 0;
+  margin-left: auto;
+
+  @include font(400, 18px, 30px, $color-dark-text);
+}

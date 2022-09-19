@@ -1,0 +1,25 @@
+.team__title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 82px;
+}
+
+.team__item {
+  width: 320px;
+}
+
+.team__img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.team__description {
+  margin: 0;
+
+  @include font(400, 18px, 30px, $color-dark-text);
+}

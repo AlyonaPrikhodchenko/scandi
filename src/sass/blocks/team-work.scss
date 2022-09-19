@@ -1,0 +1,42 @@
+.team-work__title {
+  margin-bottom: 40px;
+  padding-left: 42px;
+  text-align: center;
+}
+
+.team-work__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+
+  counter-reset: list;
+}
+
+.team-work__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    content: counter(list);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    background-color: $color-dark-bg;
+    border-radius: 50%;
+
+    counter-increment: list;
+
+    @include font(500, 30px, 30px, $color-light-text);
+  }
+}
+
+.team-work__text {
+  margin: 0;
+  text-align: center;
+
+  @include font(400, 18px, 30px, $color-dark-text);
+}

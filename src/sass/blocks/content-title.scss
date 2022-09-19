@@ -1,0 +1,6 @@
+.content-title {
+  margin: 0;
+  text-transform: uppercase;
+
+  @include font(400, 40px, 50px, $color-dark-text);
+}

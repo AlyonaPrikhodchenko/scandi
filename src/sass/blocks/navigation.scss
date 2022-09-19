@@ -1,0 +1,30 @@
+.navigation__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    margin-right: 28px;
+  }
+}
+
+.navigation__link {
+  text-decoration: none;
+
+  @include font(400, 16px, 20px, $color-dark-text);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-dark-text;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

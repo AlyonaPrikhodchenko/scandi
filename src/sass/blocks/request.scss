@@ -1,0 +1,64 @@
+.request {
+  background-color: $color-dark-bg;
+}
+
+.request__container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+}
+
+.request__form-wrapper {
+  margin-top: 50px;
+  padding-left: 82px;
+}
+
+.request__title {
+  margin-bottom: 20px;
+  color: $color-light-text;
+}
+
+.request__text {
+  width: 507px;
+  margin: 0;
+  margin-bottom: 45px;
+
+  @include font(400, 18px, 30px, $color-light-text);
+}
+
+.request__label {
+  display: block;
+  margin-bottom: 33px;
+}
+
+.request__input {
+  width: 100%;
+  padding-bottom: 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $color-light-text;
+
+  @include font(400, 18px, 30px, $color-light-text);
+  outline: none;
+
+  &::placeholder {
+    @include font(400, 18px, 30px, $color-light-text);
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-dark-text;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.request__map {
+  display: block;
+}
